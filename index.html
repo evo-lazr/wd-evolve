@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evolve</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            color: white;
+
+        }
+        a{
+            text-decoration: none;
+            /* color: rgb(52, 11, 99); */
+        }
+        body{
+            /* background: linear-gradient(45deg,rgb(99, 224, 255),rgb(215, 156, 255)); */
+            background-image: url(./assets/img/home/home-bg.jpg);
+            /* background-size: contain; */
+            background-position: center;
+            background-attachment: fixed;
+            min-height: 100vh;
+            /* text-align: center; */
+        }
+        header{
+            text-align: center;
+            min-height: 40vh;
+            display: flex;
+            flex-direction: column;
+            font-size: 30px;
+            justify-content: space-evenly;
+            padding: 90px;
+        }
+        header img{
+            margin: auto;
+            max-width: 500px;
+        }
+        .row{
+            display: flex;
+            justify-content: space-around;
+            padding: 50px 0;
+        }
+        main{
+            max-width: 1200px;
+            margin: auto;
+        }
+        .col-2{
+            background: rgba(255, 255, 255, 0.3);
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            transition: ease 0.4s;
+        }
+        .col-2 h3,.col-2 h4,.col-2 h5{
+            color: black;
+            /* text-align: center; */
+            background: rgb(178, 176, 255);
+            padding: 10px 20px;    
+            margin: 10px 0 ;
+        }
+        .col-2 span{
+            padding: 30px;
+        }
+        .col-2 img{
+            border-radius: 10px 10px 0px 0px;
+            width: 100%;
+        }
+        .col-2:hover{
+            transform: translateY(-8px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+        .col-2 ul{
+            margin-left:  40px;
+            margin-bottom:  10px;
+
+        }
+        .title,footer{
+            text-align: center;
+            padding: 30px 0;
+        }
+        .title h1,.title h2,.title h3 {
+            padding: 10px;
+        }
+        .desc{
+            padding: 10px 30px;
+        }
+        @media(max-width:1100px){
+            .row{
+                flex-direction: column;
+            }
+            *{
+                text-align: center;
+            }
+            li{
+                text-align: left;
+            }
+            ul{
+                padding: 0 5%;
+            }
+        }
+        </style>
+</head>
+
+<body>
+    <div class="title">
+        <h1>Dyal Singh College</h1>
+        <h2>B.Sc. Physical Science (C.S.) - Sem V</h2>
+        <h3>Student's Name : Aman Yadav</h3>
+        <h3>College Roll No. : 19/13049</h3>
+        <h3>University Roll Number : 19021582122</h3>
+        <h3>Subject : Web Design using HTML5 (SEC)</h3>
+    </div>
+    <header>
+        <div>Welcome to</div>
+        <div>
+            <img src="./assets/img/ecom/evo-logo.png" alt="">
+        </div>
+    </header>
+    <main>
+        <div class="row">
+            <div class="col-2 ecom">
+                <a href="./evolve-store/index.html">
+                    <img src="./assets/img/home/ecom-prev.png" alt="">
+                    <h3>E-commerce Store</h3>
+                    <h4>Description</h4>
+                    <div class="desc">Evolve-Store is an E-commerce store for various tech products like smartphones, laptops etc.</div>
+                    <h4>Pages on this Website</h4>
+                    <ul>
+                        <li>Home</li>
+                        <li>Products
+                            <ul>
+                                <li>1 Smartphone page</li>
+                                <li>1 Watch page</li>
+                                <li>1 Earpods page</li>
+                            </ul>
+                        </li>
+                        <li>FAQ</li>
+                        <li>About</li>
+                        <li>Contact</li>
+                        <li>Shopping Cart</li>
+                        <li>User Login</li>
+                        <li>Terms and conditions</li>
+                        <li>Privacy Policy</li>
+                    </ul>
+                </a>
+            </div>
+            <div class="col-2 port">
+                <a href="./evolve-portfolio/index.html">
+                    <img src="./assets/img/home/port-prev.png" alt="">
+                    <h3>Portfolio Website</h3>
+                    <h4>Description</h4>
+                    <div class="desc">This is a Portfolio website which provides professional information about me and presents a showcase of my work.</div>
+                    <h4>Pages on this Website</h4>
+                    <h5>Note : This website has 1 main page which is divided into multiple section for a clean user-friendly experience.</h5>
+                    <ul>
+                        <li>Home</li>
+                        <li>About Me</li>
+                        <li>Services</li>
+                        <li>Reviews</li>
+                        <li>Contact</li>
+                        <li>Hire Me</li>
+                        <li>Completed Pages</li>
+                    </ul>
+                </a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <h3>Designed and Developed by Aman Yadav</h3>
+    </footer>
+</body>
+</html>
