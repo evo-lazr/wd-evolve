@@ -6,12 +6,12 @@
     box-sizing: border-box;
     user-select: none;
     transition: ease 0.3s;
+    /* text-align: center; */
 }
 *:focus {
     outline: 0;
 }
 :root {
-    --orange: #ffa500;
     --gblue: #4285F4;
     --gred: #DB4437;
     --fprpl: #bf7aff;
@@ -36,36 +36,59 @@ a{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
+    padding: 20px 0;
 }
 .col-2{
     flex-basis: 50%;
     padding: 0 30px;
 }
-.new-prod h1{
+.col-2 img,.col-3 img{
+    width: 100%;
+    padding: 30px 0;
+}
+.new-prod h1,.about h1{
     font-size: 45px;
     margin: 20px 0;
 }
 .new-prod p{
-    font-size: 16px;
-    padding: 10px 0;
     text-align: unset;
 }
 .col-3{
-    flex-basis: 50%;
+    flex-basis: 30%;
     padding: 20px;
+    min-width: 250px;
 }
 .col-4{
-
+    flex-basis: 25%;
+    padding: 20px;
+}
+.col-4:hover{
+    transform: translateY(-8px);
+}
+.col-4 img{
+    width: 100%;
 }
 .col-5{
-
+    height: 55px;
+}
+.col-5 img{
+    height: 100%;
+    cursor: pointer;
+    transition: ease 0.3s;
+}
+.col-5 img:hover{
+    filter: opacity(0.7);
+    transform: translatey(-5px);
 }
 .container{
     max-width: 1366px;
     margin: 50px auto ;
+    padding: 0 30px;
 }
 .sub-container{
     max-width: 1080px;
+    padding: 0 30px;
     margin: 50px auto ;   
 }
 section{
@@ -140,9 +163,6 @@ nav ul li a:hover{
     text-transform: uppercase;
     text-shadow: 0 5px 10px rgba(0, 0, 0,0.8);
 }
-.new-prod img{
-    width: 100%;
-}
 .title{
     font-size: 36px;
     color: var(--gblue);
@@ -154,7 +174,7 @@ section h3{
 }
 section p{
     font-size: 18px;
-    color: black;
+    line-height: 25px;
     text-align: center;
     padding: 20px 0;
 }
@@ -167,6 +187,90 @@ section p{
 .category .col-3:hover{
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
     transform: translateY(-10px);
+}
+.page-title{
+    font-size: 54px;
+    color: var(--gblue);
+    text-align: center;
+}
+.feature-head{
+    font-size: 36px;
+    text-align: center;
+}
+
+.question{
+    /* display: flex; */
+    justify-content: space-between;
+    padding: 0 10px;
+}
+.faq-items .bx{
+    font-size: 24px;
+}
+.faq-items li.showAnswer .bx{
+    transform: rotate(180deg);
+}
+.faq-items li p{
+    width: 80%;
+    font-weight: 500;
+    padding: 10px 20px;
+    text-align: unset;
+    color: #595959;
+    display: none;
+}
+.faq-items li.showAnswer p{
+    display: block;
+    
+}
+.faq-items span{
+    cursor: pointer;
+    font-size: 20px;
+    padding: 10px 0;
+}
+.faq-items .question:hover{
+    color: rgb(111, 0, 255);
+}
+.faq-items li{
+    width: 80%;
+    margin: auto;
+}
+.faq-items hr{
+    /* color: rgb(206, 206, 206); */
+    border: 1px solid rgb(180, 180, 180);
+    margin: 20px 0;
+}
+.contact input,.contact textarea{
+    /* font-weight: 500; */
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid black ;
+    padding: 10px 15px;
+    margin: 10px 0;
+    font-size: 18px;
+}
+.contact input:focus,.contact textarea:focus{
+    border-bottom: 2px solid var(--gblue) ;
+    background: var(--fcyan);
+    border-radius: 10px;
+}
+.contact textarea{
+    height: 150px;
+    resize: none;
+}
+.about-box .bx{
+    font-size: 36px;
+}
+.about-box{
+    padding-bottom: 40px;
+    padding-left: 50px;
+}
+.about-box .about-large{
+    font-size: 20px;
+    padding: 5px 0;
+    font-weight: 500;
+}
+.about-box .about-small{
+    padding: 5px 0;
+    font-size: 14px;
 }
 footer{
     /* background: linear-gradient(to left,rgb(200, 255, 223),rgb(163, 211, 255)); */
@@ -225,21 +329,21 @@ footer .copyright{
     text-align: center;
 }
 .btn{
-    font-size: 18px;
+    font-size: 20px;
     cursor: pointer;
-    line-height: 20px;
     display: inline-block;
-    background: #0099ff;
-    color: white;
-    padding: 8px 20px;
+    font-weight: 500;
+    background: var(--gblue);
+    color: rgb(101, 234, 255);
+    padding: 10px 20px;
     margin: 30px 0;
-    border: 1px solid transparent;
+    border: 2px solid rgb(101, 234, 255);
     border-radius: 30px;
 }
 .btn:hover{
-    background-color: rgba(135, 201, 255, 0.39);
-    color: #0066ff;
-    border: 1px solid #0066ff;
+    background-color: rgba(101, 234, 255,0.9);
+    color: var(--gblue);
+    border: 2px solid var(--gblue);
 }
 @media(max-width:900px){
     .menu-icon{
