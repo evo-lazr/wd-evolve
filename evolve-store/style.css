@@ -272,6 +272,23 @@ section p{
     padding: 5px 0;
     font-size: 14px;
 }
+.review{
+    text-align: center;
+}
+.review .bxs-quote-right{
+    font-size: 36px;
+}
+.review .col-3{
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+.review .col-3 img{
+    max-width: 50%;
+}
+.rating{
+    font-size: 20px;
+    color: var(--gblue);
+}
 footer{
     /* background: linear-gradient(to left,rgb(200, 255, 223),rgb(163, 211, 255)); */
     background-image: url(../assets/img/ecom/footer-bg.jpg);

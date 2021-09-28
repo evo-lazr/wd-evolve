@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./responsive.css">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+    <title>Login - Evolve</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="./img/evo-logo-blue.png" height="50px">
+            </div>
+            <nav>
+                <ul id="NavMenu">
+                    <li><a href="./index.html">HOME</a></li>
+                    <li><a href="./products.html">PRODUCTS</a></li>
+                    <li><a href="./faq.html">FAQ</a></li>
+                    <li><a href="./about.html">ABOUT</a></li>
+                    <li><a href="./contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+            <div class="login">
+                <a href="./cart.html"><span class="material-icons-round">shopping_cart</span></a>
+                <a href="./login.html"><span class="material-icons-round">account_circle</span></a>
+                <span class="material-icons-round menu-icon" id="MenuIcon" onclick="menudrop()">menu</span>
+            </div>
+        </div>
+    </div>
+    <div class="contact">
+        <h2 class="title"><span class="material-icons-round" style="font-size: 36px;">call</span> Contact Us</h2>
+        <div class="mapouter">
+            <div class="gmap_canvas">
+                <iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                    src="https://maps.google.com/maps?width=1920&amp;height=400&amp;hl=en&amp;q=DLF CyberHub&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+                </iframe>
+            </div>
+            <style>
+                .mapouter {
+                    position: relative;
+                    text-align: right;
+                    width: 100%;
+                    height: 400px;
+                }
+        
+                .gmap_canvas {
+                    overflow: hidden;
+                    background: none !important;
+                    width: 100%;
+                    height: 400px;
+                }
+        
+                .gmap_iframe {
+                    height: 400px !important;
+                }
+            </style>
+        </div>
+        <div class="sub-container">
+            <div class="row">
+                <div class="col-2">
+                    <div class="contact-info">
+                        <div class="about-box">
+                            <div class="a-box-icon">
+                                <i class='bx bx-home'></i>
+                            </div>
+                            <div class="a-box-text">
+                                <strong>420/69, DLF CyberHub, Phase 2</strong>
+                                <p>Gurugram, Haryana - 122002</p>
+                            </div>
+                        </div>
+                        <div class="about-box">
+                            <div class="a-box-icon">
+                                <i class='bx bx-phone-call'></i>
+                            </div>
+                            <div class="a-box-text">
+                                <strong>+91 96 420 69420</strong>
+                                <p>Mon to Fri 9 AM - 5 PM
+                                </p>
+                            </div>
+                        </div>
+                        <div class="about-box">
+                            <div class="a-box-icon">
+                                <i class='bx bx-mail-send'></i>
+                            </div>
+                            <div class="a-box-text">
+                                <strong>help@evolve.com</strong>
+                                <p>Send us your query anytime!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <form id="LoginForm">
+                        <div class="form-control">
+                            <input type="text" required>
+                            <label><span>Full Name</span></label>
+                        </div>
+                        <div class="form-control">
+                            <input type="email" required>
+                            <label><span>E-mail ID</span></label>
+                        </div>
+                        <div class="form-control">
+                            <input type="text" required>
+                            <label><span>Subject</span></label>
+                        </div>
+                        <div class="form-control">
+                            <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <span class="material-icons-round" style="color: white; font-size: 40px;">qr_code_scanner</span>
+                    <h3>Download App</h3>
+                    <p>Available for iOS and Android Smartphones</p>
+                    <div class="app-store">
+                        <i class='bx bxl-apple'></i>
+                        <span><a href="https://play.google.com/store">Download on Apple App Store</a></span>
+                        <br>
+                        <i class='bx bxl-play-store'></i>
+                        <span><a href="https://www.apple.com/in/app-store/">Get it on Google Play Store</a></span>
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="./img/evo-logo.png" alt="">
+                    <p>Expand your possibilities</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li><a href="./rewards.html">Rewards</a></li>
+                        <li><a href="https://www.termsfeed.com/live/defc52bf-19b7-4eaa-b3cb-bf358c39c25a">Privacy
+                                Policy</a></li>
+                        <li><a href="https://www.termsfeed.com/live/b866fdf3-d02f-4dfe-aeaf-b203c1b90557">Terms of
+                                Sale</a></li>
+                        <li><a href="./contact.html">Feedback</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Find us on :</h3>
+                    <ul>
+                        <li><a href="https://www.instagram.com/"><i class='bx bxl-instagram'></i> Instagram</a></li>
+                        <li><a href="https://www.linkedin.com/"><i class='bx bxl-linkedin'></i> Linkedin</a></li>
+                        <li><a href="https://twitter.com/"><i class='bx bxl-twitter'></i> Twitter</a></li>
+                        <li><a href="https://www.youtube.com/"><i class='bx bxl-youtube'></i> Youtube</a></li>
+                        <li><a href="https://www.twitch.tv/"><i class='bx bxl-twitch'></i> Twitch</a></li>
+                    </ul>
+                </div>
+            </div>
+            <p class="copyright">Copyright © 2020-21 EVOLVE. All Rights Reserved. <br><br> EVOLVE® is a Registered
+                Trademark of CYBER group.</p>
+        </div>
+    </div>
+    <script>
+        var NavMenu = document.getElementById("NavMenu");
+        NavMenu.style.maxHeight = "0px";
+        function menudrop() {
+            if (NavMenu.style.maxHeight == "0px") {
+                document.getElementById("MenuIcon").style.transform = "rotate(90deg)";
+                NavMenu.style.maxHeight = "300px"
+            }
+            else {
+                document.getElementById("MenuIcon").style.transform = "rotate(0deg)";
+                NavMenu.style.maxHeight = "0px"
+            }
+        }
+    </script>
+</body>
+
+</html>

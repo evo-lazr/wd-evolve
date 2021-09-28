@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:wght@300;400;500;600;700;800&display=swap');
+
+.none-class{
+color: #FE4A49;
+color: #2AB7CA;
+color: #FED766;
+color: #6441A4;
+color: #4285F4;
+color: #DB4437;
+color: #F4B400;
+color: #0F9D58;
+color: #1DA1F2;
+color: #034EA2;
+color: #78C257; 
+color: #5680E9;
+color: #C1C8E4;
+color: #84CEEB;
+color: #5AB9EA;
+color: #8860D0;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Google Sans', sans-serif;
+}
+body{
+    /* background-color: black; */
+}
+ul{
+    list-style-type: none;
+}
+a{
+    font-size: 18px;
+    font-weight: 500;
+    /* color: #0099e6; */
+    color: black;
+    /* color: #1DA1F2; */
+
+    text-decoration: none;
+}
+.material-icons-round,i{
+    font-size: 24px;
+    /* color: #1DA1F2; */
+
+    /* color: #0F9D58; */
+}
+.nav{
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    /* background-color: rgba(167, 234, 255, 0.85); */
+    background-color: #C1C8E4;
+}
+.logo-img img{
+    height: 50px;
+    padding: 5px 0px;
+}
+.nav-menu{
+
+}
+.nav-acc{
+    color: #1DA1F2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-acc i{
+    padding: 0 5px;
+    font-size: 36px;
+}
+.menu li{
+    display: inline-block;
+    text-align: center;
+    padding: 0 5px;
+}
+.nav ul{
+
+}
+.sub-menu li{
+    /* display: none; */
+}
+.nav-menu .menu .expand_more{
+    height: 100%;
+    line-height: 60px;
+    text-align: center;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+.menu li:hover .expand_more{
+    transform: rotate(180deg);
+}

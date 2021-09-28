@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./responsive.css">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+    <title>Home - Evolve</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="./img/evo-logo-blue.png" height="50px">
+                </div>
+                <nav>
+                    <ul id="NavMenu">
+                        <li><a href="./index.html">HOME</a></li>
+                        <li><a href="./products.html">PRODUCTS</a></li>
+                        <li><a href="./faq.html">FAQ</a></li>
+                        <li><a href="./about.html">ABOUT</a></li>
+                        <li><a href="./contact.html">CONTACT</a></li>
+                    </ul>
+                </nav>
+                <div class="login">
+                    <a href="./cart.html"><span class="material-icons-round">shopping_cart</span></a>
+                    <a href="./login.html"><span class="material-icons-round">account_circle</span></a>
+                    <span class="material-icons-round menu-icon" id="MenuIcon" onclick="menudrop()">menu</span>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-2">
+                    <img src="./img/home-prod.jpg" alt="">
+                </div>
+                <div class="col-2">
+                    <h1>Coming Soon.</h1>
+                    <p>Evolve is all set to bring you the same premium experience now on laptops very soon. <br><br>One
+                        step closer to Evolve ecosystem.</p>
+                    <a href="./cart.html" class="btn">PRE-ORDER NOW <span class="material-icons-round">priority_high</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- phone,tv,laptop,watch,audio -->
+        <div class="categories">
+            <div class="sub-container">
+                <h2 class="title"><span class="material-icons-round">category</span> Products</h2>
+                <div class="row">
+                    <div class="col-3">
+                        <a href="./products.html#prod-watch">
+                            <img src="./img/prod-watch.jpg" alt="">
+                            <h3>Wearables</h3>
+                        </a>
+                    </div>
+                    <div class="col-3">
+                        <a href="./products.html#prod-phone">
+                            <img src="./img/prod-phone.png" alt="">
+                            <h3>Smartphones</h3>
+                        </a>
+                    </div>
+                    <div class="col-3">
+                        <a href="./products.html#prod-audio">
+                            <img src="./img/prod-audio.png" alt="">
+                            <h3>Audio</h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="featured">
+            <div class="sub-container">
+                <h2 class="title"><span class="material-icons-round">bolt</span> Limited Offer</h2>
+
+                <div class="row">
+                    <div class="col-2">
+                        <!-- <img src="./img/featured.png" class="featured-img"> -->
+                        <img src="./img/phone-3d.png" class="featured-img">
+                    </div>
+                    <div class="col-2">
+                        <p>This product is high in demand and hence goes out of stock often. Grab yours till you have the
+                            chance.</p>
+                        <h1>Evolve eXtend #1337 Limited Edition</h1>
+                        <p>Evolve eXtend is a phone designed for geeks by geeks. This product is primarily meant for the
+                            Power Users who won't settle for anything less than pure perfection.</p>
+                        <a href="./cart.html" class="btn">Buy Now <span class="material-icons-round">shopping_cart</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="review">
+            <div class="sub-container">
+                <h2 class="title"><span class="material-icons-round">reviews</span> Reviews</h2>
+                <div class="row">
+                    <div class="col-3">
+                        <span class="material-icons-round quote-icon">format_quote</span>
+                        <p>UwU. Thanks for doing what you do, Oni Chaa thanks for building this software, Kimochi Yamate and
+                            thanks for the help you give. Ara Ara. Keep up the great work and thanks!</p>
+                        <div class="rating">
+                            <span class="material-icons-round">star</span><span
+                                class="material-icons-round">star</span><span class="material-icons-round">star</span><span
+                                class="material-icons-round">star</span><span
+                                class="material-icons-round">star_outline</span>
+                        </div>
+                        <img src="./img/review-skittlecn.jpg" alt="">
+                        <h3>Skittle Chan</h3>
+                    </div>
+                    <div class="col-3">
+                        <span class="material-icons-round quote-icon">format_quote</span>
+                        <p>I just wanted to say thank you. Thanks for all the support you give during these issues in the
+                            support forum, whether it's from me or from others. Even when I don't ask questions on my own, I
+                            learn a lot from reading your suggestions to other users.</p>
+                        <div class="rating">
+                            <span class="material-icons-round">star</span><span
+                                class="material-icons-round">star</span><span class="material-icons-round">star</span><span
+                                class="material-icons-round">star</span><span class="material-icons-round">star</span>
+                        </div>
+                        <img src="./img/review-beluga.jpg" alt="">
+                        <h3>Beluga</h3>
+                    </div>
+                    <div class="col-3">
+                        <span class="material-icons-round quote-icon">format_quote</span>
+                        <p>Your product is affordable, I love the customizations I can do with it, and it works. I've been a
+                            customer of yours for years, so I've seen you grow and have witnessed the changes from minor
+                            updates to major updates.</p>
+                        <div class="rating">
+                            <span class="material-icons-round">star</span><span
+                                class="material-icons-round">star</span><span class="material-icons-round">star</span><span
+                                class="material-icons-round">star</span><span class="material-icons-round">star_half</span>
+                        </div>
+                        <img src="./img/review-pablo.jpg" alt="">
+                        <h3>Pablo Rodríguez</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="partners">
+            <div class="sub-container">
+                <h2 class="title"><span class="material-icons-round">groups</span> Proud Partners</h2>
+                <div class="row">
+                    <div class="col-5">
+                        <img src="./img/part-1plus.png" alt="">
+                    </div>
+                    <div class="col-5">
+                        <img src="./img/part-mi.png" alt="">
+                    </div>
+                    <div class="col-5">
+                        <img src="./img/part-realme.png" alt="">
+                    </div>
+                    <div class="col-5">
+                        <img src="./img/part-pixel.png" alt="">
+                    </div>
+                    <div class="col-5">
+                        <img src="./img/part-micro.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col-1">
+                        <span class="material-icons-round" style="color: white; font-size: 40px;">qr_code_scanner</span>
+                        <h3>Download App</h3>
+                        <p>Available for iOS and Android Smartphones</p>
+                        <div class="app-store">
+                            <i class='bx bxl-apple'></i>
+                            <span><a href="https://play.google.com/store">Download on Apple App Store</a></span>
+                            <br>
+                            <i class='bx bxl-play-store'></i>
+                            <span><a href="https://www.apple.com/in/app-store/">Get it on Google Play Store</a></span>
+                        </div>
+                    </div>
+                    <div class="footer-col-2">
+                        <img src="./img/evo-logo.png" alt="">
+                        <p>Expand your possibilities</p>
+                    </div>
+                    <div class="footer-col-3">
+                        <h3>Useful Links</h3>
+                        <ul>
+                            <li><a href="./rewards.html">Rewards</a></li>
+                            <li><a href="https://www.termsfeed.com/live/defc52bf-19b7-4eaa-b3cb-bf358c39c25a">Privacy
+                                    Policy</a></li>
+                            <li><a href="https://www.termsfeed.com/live/b866fdf3-d02f-4dfe-aeaf-b203c1b90557">Terms of
+                                    Sale</a></li>
+                            <li><a href="./contact.html">Feedback</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col-4">
+                        <h3>Find us on :</h3>
+                        <ul>
+                            <li><a href="https://www.instagram.com/"><i class='bx bxl-instagram'></i> Instagram</a></li>
+                            <li><a href="https://www.linkedin.com/"><i class='bx bxl-linkedin'></i> Linkedin</a></li>
+                            <li><a href="https://twitter.com/"><i class='bx bxl-twitter'></i> Twitter</a></li>
+                            <li><a href="https://www.youtube.com/"><i class='bx bxl-youtube'></i> Youtube</a></li>
+                            <li><a href="https://www.twitch.tv/"><i class='bx bxl-twitch'></i> Twitch</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="copyright">Copyright © 2020-21 EVOLVE. All Rights Reserved. <br><br> EVOLVE® is a Registered
+                    Trademark of CYBER group.</p>
+            </div>
+        </div>
+    <script>
+        var NavMenu = document.getElementById("NavMenu");
+        NavMenu.style.maxHeight = "0px";
+        function menudrop() {
+            if (NavMenu.style.maxHeight == "0px") {
+                document.getElementById("MenuIcon").style.transform = "rotate(90deg)";
+                NavMenu.style.maxHeight = "300px"
+            }
+            else {
+                document.getElementById("MenuIcon").style.transform = "rotate(0deg)";
+                NavMenu.style.maxHeight = "0px"
+            }
+        }
+
+    </script>
+</body>
+
+</html>
